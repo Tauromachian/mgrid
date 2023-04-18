@@ -12,5 +12,6 @@
     "playground"
   ],
   "author": "Jose Garcia",
-  "license": "MIT"
+  "license": "MIT",
+  "packageManager": "yarn@3.5.0"
 }
