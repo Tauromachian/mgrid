@@ -1,0 +1,13 @@
+{
+  "name": "mgrid-playground",
+  "version": "1.0.0",
+  "description": "Modular grid's playground",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "parcel index.html"
+  },
+  "dependencies": {
+    "mgrid": "workspace:*"
+  }
+}
