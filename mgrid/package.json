@@ -1,0 +1,20 @@
+{
+  "name": "mgrid",
+  "version": "0.1.0",
+  "description": "A simple container class based on Bootstrap's container class",
+  "scripts": {
+    "watch": "parcel watch container.scss",
+    "build": "parcel build container.scss"
+  },
+  "workspaces": [
+    "mgrid",
+    "playground"
+  ],
+  "author": "Jose Garcia",
+  "license": "MIT",
+  "devDependencies": {
+    "@parcel/transformer-sass": "2.8.3",
+    "parcel": "^2.8.3",
+    "sass": "^1.62.0"
+  }
+}
