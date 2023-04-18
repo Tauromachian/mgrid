@@ -1,1 +1,1 @@
-import "mgrid/dist/container.css";
+import "@jogarcia/mgrid/dist/container.css";
