@@ -2,6 +2,19 @@
   "name": "mgrid",
   "version": "0.1.0",
   "description": "A simple container class based on Bootstrap's container class",
+  "homepage": "https://github.com/Tauromachian/mgrid.git#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Tauromachian/mgrid.git",
+    "directory": "mgrid/onu-ui"
+  },
+  "keywords": [
+    "grid",
+    "container",
+    "css",
+    "layout",
+    "sass"
+  ],
   "scripts": {
     "watch": "parcel watch container.scss",
     "build": "parcel build container.scss"
