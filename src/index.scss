@@ -1,29 +1,46 @@
-.container {
-  max-width: 100%;
-}
+$breakpoints: (
+  "xs": (
+    "min": 0px,
+    "width": "100%",
+  ),
+  "sm": (
+    "min": 576px,
+    "width": "100%",
+  ),
+  "md": (
+    "min": 768px,
+    "width": 720px,
+  ),
+  "lg": (
+    "min": 992px,
+    "width": 960px,
+  ),
+  "xl": (
+    "min": 1200px,
+    "width": 1140px,
+  ),
+  "2xl": (
+    "min": 1400px,
+    "width": 1320px,
+  ),
+) !default;
 
-@media screen and (min-width: 960px) {
-  .container {
-    max-width: 900px;
-    margin-right: auto;
-    margin-left: auto;
-  }
-}
+@each $breakpoint, $values in $breakpoints {
+  $min: map-get($values, "min");
+  $width: map-get($values, "width");
 
-@media screen and (min-width: 1280px) {
-  .container {
-    max-width: 1200;
-  }
-}
+  // Generate a CSS class for each breakpoint
+  @media (min-width: $min) {
+    .container {
+      max-width: $width;
 
-@media screen and (min-width: 1920px) {
-  .container {
-    max-width: 1380px;
-  }
-}
-
-@media screen and (min-width: 2560px) {
-  .container {
-    max-width: 1800px;
+      @if $breakpoint == "xs" or $breakpoint == "sm" {
+        margin-left: 0.4em;
+        margin-right: 0.4em;
+      } @else {
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
   }
 }
