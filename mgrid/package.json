@@ -1,5 +1,5 @@
 {
-  "name": "mgrid",
+  "name": "@jogarcia/mgrid",
   "version": "0.1.0",
   "description": "A simple container class based on Bootstrap's container class",
   "homepage": "https://github.com/Tauromachian/mgrid.git#readme",
