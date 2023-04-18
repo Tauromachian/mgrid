@@ -1,1 +1,12 @@
-@import "~mgrid/container.scss";
+@use "~mgrid/container.scss" with (
+  $breakpoints: (
+    "xs": (
+      "min": 0px,
+      "width": 100%,
+    ),
+    "sm": (
+      "min": 576px,
+      "width": 100%,
+    ),
+  )
+);
