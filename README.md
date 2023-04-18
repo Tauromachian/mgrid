@@ -7,7 +7,7 @@ This module provides a basic class. The class limits the content's width and add
 In a js file:
 
 ```js
-import "mgrid/dist/container.css";
+import "mgrid/container.scss";
 ```
 
 or
@@ -25,7 +25,7 @@ In a scss/sass file:
 or
 
 ```scss
-@import "~mgrid/dist/container.scss";
+@import "~mgrid/dist/container.css";
 ```
 
 ## Default breakpoints
