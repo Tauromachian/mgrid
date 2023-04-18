@@ -39,6 +39,33 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@jogarcia/mgrid-monorepo@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "@jogarcia/mgrid-monorepo@workspace:."
+  languageName: unknown
+  linkType: soft
+
+"@jogarcia/mgrid-playground@workspace:playground":
+  version: 0.0.0-use.local
+  resolution: "@jogarcia/mgrid-playground@workspace:playground"
+  dependencies:
+    "@jogarcia/mgrid": "workspace:*"
+    "@parcel/transformer-sass": 2.8.3
+    parcel: ^2.8.3
+    sass: ^1.62.0
+  languageName: unknown
+  linkType: soft
+
+"@jogarcia/mgrid@workspace:*, @jogarcia/mgrid@workspace:mgrid":
+  version: 0.0.0-use.local
+  resolution: "@jogarcia/mgrid@workspace:mgrid"
+  dependencies:
+    "@parcel/transformer-sass": 2.8.3
+    parcel: ^2.8.3
+    sass: ^1.62.0
+  languageName: unknown
+  linkType: soft
+
 "@jridgewell/gen-mapping@npm:^0.3.0":
   version: 0.3.3
   resolution: "@jridgewell/gen-mapping@npm:0.3.3"
@@ -2096,33 +2123,6 @@ __metadata:
   checksum: 9d0128ed425a89f4cba8f787dca27ad9408b5cb1b220af2d938e2a0629d17d879a34d2cb19318bdb26c3f14c77dd5dfbae67211f5caaf07b61b1f2c5c8c7dc16
   languageName: node
   linkType: hard
-
-"mgrid-monorepo@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "mgrid-monorepo@workspace:."
-  languageName: unknown
-  linkType: soft
-
-"mgrid-playground@workspace:playground":
-  version: 0.0.0-use.local
-  resolution: "mgrid-playground@workspace:playground"
-  dependencies:
-    "@parcel/transformer-sass": 2.8.3
-    mgrid: "workspace:*"
-    parcel: ^2.8.3
-    sass: ^1.62.0
-  languageName: unknown
-  linkType: soft
-
-"mgrid@workspace:*, mgrid@workspace:mgrid":
-  version: 0.0.0-use.local
-  resolution: "mgrid@workspace:mgrid"
-  dependencies:
-    "@parcel/transformer-sass": 2.8.3
-    parcel: ^2.8.3
-    sass: ^1.62.0
-  languageName: unknown
-  linkType: soft
 
 "micromatch@npm:^4.0.5":
   version: 4.0.5
