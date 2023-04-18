@@ -2107,7 +2107,10 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "mgrid-playground@workspace:playground"
   dependencies:
+    "@parcel/transformer-sass": 2.8.3
     mgrid: "workspace:*"
+    parcel: ^2.8.3
+    sass: ^1.62.0
   languageName: unknown
   linkType: soft
 
