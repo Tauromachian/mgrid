@@ -1,17 +1,16 @@
 {
-  "name": "mgrid",
+  "name": "mgrid-monorepo",
   "version": "0.1.0",
   "description": "A simple container class based on Bootstrap's container class",
   "scripts": {
-    "dev": "parcel src/index.html",
-    "watch": "parcel watch src/container.scss",
-    "build": "parcel build src/container.scss"
+    "dev": "yarn --cwd playground dev",
+    "watch": "yarn --cwd mgrid watch",
+    "build": "yarn --cwd mgrid build"
   },
+  "workspaces": [
+    "mgrid",
+    "playground"
+  ],
   "author": "Jose Garcia",
-  "license": "MIT",
-  "devDependencies": {
-    "@parcel/transformer-sass": "2.8.3",
-    "parcel": "^2.8.3",
-    "sass": "^1.62.0"
-  }
+  "license": "MIT"
 }
