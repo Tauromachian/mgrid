@@ -7,25 +7,25 @@ This module provides a basic class. The class limits the content's width and add
 In a js file:
 
 ```js
-import "mgrid/container.scss";
+import "@jogarcia/mgrid/container.scss";
 ```
 
 or
 
 ```js
-import "mgrid/dist/container.css";
+import "@jogarcia/mgrid/dist/container.css";
 ```
 
 In a scss/sass file:
 
 ```scss
-@import "~mgrid/container.scss";
+@import "~@jogarcia/mgrid/container.scss";
 ```
 
 or
 
 ```scss
-@import "~mgrid/dist/container.css";
+@import "~@jogarcia/mgrid/dist/container.css";
 ```
 
 ## Default breakpoints
@@ -58,7 +58,7 @@ Add .container class to tag. Example:
 Additionally you can pass down your own breakpoints if you use SCSS. Example:
 
 ```scss
-@use "~mgrid/container.scss" with (
+@use "~@jogarcia/mgrid/container.scss" with (
   $breakpoints: (
     "xs": (
       "min": 0px,
