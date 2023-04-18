@@ -55,7 +55,7 @@ Add .container class to tag. Example:
 </div>
 ```
 
-Additionally you can pass down you own breakpoints if you use SCSS. Example:
+Additionally you can pass down your own breakpoints if you use SCSS. Example:
 
 ```scss
 @use "~mgrid/container.scss" with (
