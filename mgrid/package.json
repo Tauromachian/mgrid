@@ -6,7 +6,7 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/Tauromachian/mgrid.git",
-    "directory": "mgrid/onu-ui"
+    "directory": "mgrid/mgrid"
   },
   "keywords": [
     "grid",
