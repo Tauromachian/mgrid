@@ -1,5 +1,5 @@
 {
-  "name": "b-container",
+  "name": "mgrid",
   "version": "0.0.0",
   "description": "A simple container class based on Bootstrap's container class",
   "scripts": {
