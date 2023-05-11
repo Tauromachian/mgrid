@@ -32,12 +32,12 @@ $breakpoints: (
   // Generate a CSS class for each breakpoint
   @media (min-width: $min) {
     .container {
-      max-width: $width;
-
       @if $breakpoint == "xs" or $breakpoint == "sm" {
         margin-left: 0.4em;
         margin-right: 0.4em;
+        max-width: calc($width - 0.8em);
       } @else {
+        max-width: $width;
         margin-left: auto;
         margin-right: auto;
       }
