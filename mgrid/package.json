@@ -8,6 +8,10 @@
     "url": "https://github.com/Tauromachian/mgrid.git",
     "directory": "mgrid/mgrid"
   },
+  "files": [
+    "dist",
+    "container.scss"
+  ],
   "keywords": [
     "grid",
     "container",
