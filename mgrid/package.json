@@ -21,7 +21,8 @@
   ],
   "scripts": {
     "watch": "parcel watch container.scss gap.scss",
-    "build": "parcel build container.scss gap.scss"
+    "build": "parcel build container.scss gap.scss",
+    "deploy": "yarn run build && yarn publish"
   },
   "workspaces": [
     "mgrid",
