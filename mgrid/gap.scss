@@ -1,0 +1,13 @@
+$range: 15 !default;
+$unit: rem !default;
+
+@mixin gap($range, $base, $unit: rem) {
+  @for $i from 1 through $range {
+    $value: $base * $i;
+    .gap-#{$i} {
+      gap: calc($value / 4) + $unit;
+    }
+  }
+}
+
+@include gap($range, 1, $unit);
