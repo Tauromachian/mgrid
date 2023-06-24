@@ -8,29 +8,33 @@ In a js file:
 
 ```js
 import "@jogarcia/mgrid/container.scss";
+import "@jogarcia/mgrid/gap.scss";
 ```
 
 or
 
 ```js
 import "@jogarcia/mgrid/dist/container.css";
+import "@jogarcia/mgrid/dist/gap.css";
 ```
 
 In a scss/sass file:
 
 ```scss
 @import "~@jogarcia/mgrid/container.scss";
+@import "~@jogarcia/mgrid/gap.scss";
 ```
 
 or
 
 ```scss
 @import "~@jogarcia/mgrid/dist/container.css";
+@import "~@jogarcia/mgrid/dist/gap.css";
 ```
 
-## Default breakpoints
+## Container default breakpoints
 
-If you have used before most styles libraries you must be used so far to breakpoints. These are the default breakpoints of this library.
+If you have used before most styles libraries you must be used to breakpoints. These are the default breakpoints of this library.
 
 xs: >= 0px
 sm: >= 576px
@@ -41,7 +45,7 @@ xl: >= 1200px
 
 If you have worked with Bootstrap before you'll recognize this. These are Bootstrap's breakpoints.
 
-## How to use
+## How to use container
 
 Add .container class to tag. Example:
 
@@ -71,3 +75,41 @@ Additionally you can pass down your own breakpoints if you use SCSS. Example:
   )
 );
 ```
+
+## Gap default values
+
+By default the gap:
+
+- Uses the rem unit.
+- Iterates from 0 to 15 creating multiplying by a default base of 0.25.
+
+```css
+.gap-0 {
+  gap: 0;
+}
+
+.gap-1 {
+  gap: 0.25rem;
+}
+
+.gap-2 {
+  gap: 0.5rem;
+}
+```
+
+And so on until 15.
+
+## Gap, how to use
+
+The same as container you can directly use the class. In case you are using SCSS you can provide different range, base and unit.
+Example:
+
+```scss
+@use "~@jogarcia/mgrid/gap.scss" with (
+  $base: 1,
+  $range: 20,
+  $unit: px
+);
+```
+
+This will create gap classes from 0 to 20 using the pixels unit and multiplying each iteration with 1.
