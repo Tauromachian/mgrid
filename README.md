@@ -34,7 +34,7 @@ or
 
 ## Default breakpoints
 
-If you have used before most styles libraries you must be used so far to breakpoints. These are the default breakpoints of this library.
+If you have used before most styles libraries you must be used to breakpoints. These are the default breakpoints of this library.
 
 xs: >= 0px
 sm: >= 576px
