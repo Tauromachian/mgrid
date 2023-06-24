@@ -20,8 +20,8 @@
     "sass"
   ],
   "scripts": {
-    "watch": "parcel watch container.scss",
-    "build": "parcel build container.scss"
+    "watch": "parcel watch container.scss gap.scss",
+    "build": "parcel build container.scss gap.scss"
   },
   "workspaces": [
     "mgrid",
