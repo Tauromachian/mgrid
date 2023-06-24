@@ -11,4 +11,8 @@
   )
 );
 
-@use "~@jogarcia/mgrid/gap.scss";
+@use "~@jogarcia/mgrid/gap.scss" with (
+  $base: 1,
+  $range: 20,
+  $unit: px
+);
