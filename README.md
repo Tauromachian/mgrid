@@ -8,24 +8,28 @@ In a js file:
 
 ```js
 import "@jogarcia/mgrid/container.scss";
+import "@jogarcia/mgrid/gap.scss";
 ```
 
 or
 
 ```js
 import "@jogarcia/mgrid/dist/container.css";
+import "@jogarcia/mgrid/dist/gap.css";
 ```
 
 In a scss/sass file:
 
 ```scss
 @import "~@jogarcia/mgrid/container.scss";
+@import "~@jogarcia/mgrid/gap.scss";
 ```
 
 or
 
 ```scss
 @import "~@jogarcia/mgrid/dist/container.css";
+@import "~@jogarcia/mgrid/dist/gap.css";
 ```
 
 ## Default breakpoints
