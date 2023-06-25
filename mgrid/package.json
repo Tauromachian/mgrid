@@ -11,8 +11,7 @@
   },
   "files": [
     "dist",
-    "container.scss",
-    "gap.scss"
+    "*.scss"
   ],
   "keywords": [
     "grid",
