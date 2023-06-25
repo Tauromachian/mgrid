@@ -16,3 +16,7 @@
   $range: 20,
   $unit: px
 );
+
+@use "~@jogarcia/mgrid/margin.scss";
+
+@use "~@jogarcia/mgrid/padding.scss";
