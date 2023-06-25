@@ -1,0 +1,33 @@
+$range: 15 !default;
+$base: 1 !default;
+$unit: em !default;
+
+@mixin generate-padding($range, $base, $measure-unit: "") {
+  @for $i from 0 through $range {
+    .p-#{$i} {
+      padding: $i * $base + $measure-unit;
+    }
+    .pt-#{$i} {
+      padding-top: $i * $base + $measure-unit;
+    }
+    .pb-#{$i} {
+      padding-bottom: $i * $base + $measure-unit;
+    }
+    .pl-#{$i} {
+      padding-left: $i * $base + $measure-unit;
+    }
+    .pr-#{$i} {
+      padding-right: $i * $base + $measure-unit;
+    }
+    .py-#{$i} {
+      padding-top: $i * $base + $measure-unit;
+      padding-bottom: $i * $base + $measure-unit;
+    }
+    .px-#{$i} {
+      padding-right: $i * $base + $measure-unit;
+      padding-left: $i * $base + $measure-unit;
+    }
+  }
+}
+
+@include generate-padding($range, $base, $unit);

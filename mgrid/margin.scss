@@ -1,0 +1,33 @@
+$range: 15 !default;
+$base: 1 !default;
+$unit: em !default;
+
+@mixin generate-margin($i, $base, $measure-unit: "") {
+  @for $i from 0 through $range {
+    .m-#{$i} {
+      margin: $i * $base + $measure-unit;
+    }
+    .mt-#{$i} {
+      margin-top: $i * $base + $measure-unit;
+    }
+    .mb-#{$i} {
+      margin-bottom: $i * $base + $measure-unit;
+    }
+    .ml-#{$i} {
+      margin-left: $i * $base + $measure-unit;
+    }
+    .mr-#{$i} {
+      margin-right: $i * $base + $measure-unit;
+    }
+    .my-#{$i} {
+      margin-top: $i * $base + $measure-unit;
+      margin-bottom: $i * $base + $measure-unit;
+    }
+    .mx-#{$i} {
+      margin-right: $i * $base + $measure-unit;
+      margin-left: $i * $base + $measure-unit;
+    }
+  }
+}
+
+@include generate-margin($range, $base, $unit);
