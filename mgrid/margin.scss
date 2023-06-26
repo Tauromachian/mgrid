@@ -2,7 +2,7 @@ $range: 15 !default;
 $base: 1 !default;
 $unit: em !default;
 
-@mixin generate-margin($i, $base, $measure-unit: "") {
+@mixin generate-margin($range, $base, $measure-unit: "") {
   @for $i from 0 through $range {
     .m-#{$i} {
       margin: $i * $base + $measure-unit;
