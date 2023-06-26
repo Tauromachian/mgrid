@@ -9,6 +9,8 @@ In a js file:
 ```js
 import "@jogarcia/mgrid/container.scss";
 import "@jogarcia/mgrid/gap.scss";
+import "@jogarcia/mgrid/margin.scss";
+import "@jogarcia/mgrid/padding.scss";
 ```
 
 or
@@ -16,6 +18,8 @@ or
 ```js
 import "@jogarcia/mgrid/dist/container.css";
 import "@jogarcia/mgrid/dist/gap.css";
+import "@jogarcia/mgrid/dist/margin.css";
+import "@jogarcia/mgrid/dist/padding.css";
 ```
 
 In a scss/sass file:
@@ -23,6 +27,8 @@ In a scss/sass file:
 ```scss
 @import "~@jogarcia/mgrid/container.scss";
 @import "~@jogarcia/mgrid/gap.scss";
+@import "~@jogarcia/mgrid/margin.scss";
+@import "~@jogarcia/mgrid/padding.scss";
 ```
 
 or
@@ -30,6 +36,8 @@ or
 ```scss
 @import "~@jogarcia/mgrid/dist/container.css";
 @import "~@jogarcia/mgrid/dist/gap.css";
+@import "~@jogarcia/mgrid/dist/margin.css";
+@import "~@jogarcia/mgrid/dist/padding.css";
 ```
 
 ## Container default breakpoints
@@ -102,6 +110,54 @@ And so on until 15.
 ## Gap, how to use
 
 The same as container you can directly use the class. In case you are using SCSS you can provide different range, base and unit.
+Example:
+
+```scss
+@use "~@jogarcia/mgrid/gap.scss" with (
+  $base: 1,
+  $range: 20,
+  $unit: px
+);
+```
+
+This will create gap classes from 0 to 20 using the pixels unit and multiplying each iteration with 1.
+
+## Margin and padding default values
+
+By default both margin and padding:
+
+- Use the em unit.
+- Iterates from 0 to 15 creating multiplying by a default base of 1.
+- Create dimensional classes where:
+  - t = top
+  - b = bottom
+  - l = left
+  - r = right
+  - x = right and left
+  - y = top and bottom
+  - m = all the dimensions at the same time
+
+```css
+.mt-0 {
+  margin-top: 0em;
+}
+
+.mt-1 {
+  margin-top: 1em;
+}
+
+.mt-2 {
+  margin-top: 2em;
+}
+```
+
+And so on until 15 for every dimension.
+
+Margin and padding also have the auto helper for all the dimensions.
+
+## How to use
+
+The same as gap you can directly use the class. In case you are using SCSS you can provide different range, base and unit.
 Example:
 
 ```scss
