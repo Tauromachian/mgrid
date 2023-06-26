@@ -30,4 +30,25 @@ $unit: em !default;
   }
 }
 
+.pt-auto {
+  padding-top: auto;
+}
+.pb-auto {
+  padding-bottom: auto;
+}
+.pl-auto {
+  padding-left: auto;
+}
+.pr-auto {
+  padding-right: auto;
+}
+.px-auto {
+  padding-left: auto;
+  padding-right: auto;
+}
+.py-auto {
+  padding-top: auto;
+  padding-bottom: auto;
+}
+
 @include generate-padding($range, $base, $unit);
