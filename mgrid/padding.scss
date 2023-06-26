@@ -50,5 +50,8 @@ $unit: em !default;
   padding-top: auto;
   padding-bottom: auto;
 }
+.p-auto {
+  padding: auto;
+}
 
 @include generate-padding($range, $base, $unit);

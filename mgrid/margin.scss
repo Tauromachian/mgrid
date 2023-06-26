@@ -50,5 +50,8 @@ $unit: em !default;
   margin-top: auto;
   margin-bottom: auto;
 }
+.m-auto {
+  margin: auto;
+}
 
 @include generate-margin($range, $base, $unit);
