@@ -16,7 +16,7 @@ $breakpoints: (
             grid-column: span $i;
           }
         } @else {
-          .g-#{$name}-col-#{$i} {
+          .g-col-#{$name}-#{$i} {
             grid-column: span $i;
           }
         }
