@@ -64,12 +64,12 @@ or
 
 If you have used before most styles libraries you must be used to breakpoints. These are the default breakpoints of this library.
 
-xs: >= 0px
-sm: >= 576px
-md: >= 768px
-lg: >= 992px
-xl: >= 1200px
-2xl:>= 1400px
+- xs: >= 0px
+- sm: >= 576px
+- md: >= 768px
+- lg: >= 992px
+- xl: >= 1200px
+- 2xl:>= 1400px
 
 Directions specified:
 
