@@ -21,6 +21,9 @@
 
 @use "~@jogarcia/mgrid/padding.scss";
 
+@use "~@jogarcia/mgrid/g-row.scss";
+@use "~@jogarcia/mgrid/g-col.scss";
+
 .d-flex {
   display: flex;
 }
