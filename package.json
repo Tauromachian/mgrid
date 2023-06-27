@@ -1,6 +1,6 @@
 {
   "name": "@jogarcia/mgrid-monorepo",
-  "version": "0.1.2",
+  "version": "1.0.0",
   "description": "A simple container class based on Bootstrap's container class",
   "scripts": {
     "dev": "yarn --cwd playground dev",
