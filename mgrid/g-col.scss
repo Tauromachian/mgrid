@@ -1,0 +1,22 @@
+$breakpoints: (
+  "xs": 0px,
+  "sm": 576px,
+  "md": 768px,
+  "lg": 992px,
+  "xl": 1200px,
+  "2xl": 1400px,
+) !default;
+
+@mixin generate-columns($breakpoints) {
+  @each $name, $value in $breakpoints {
+    @media (min-width: $value) {
+      @for $i from 1 through 12 {
+        .g-#{$name}-col-#{$i} {
+          grid-column: span $i;
+        }
+      }
+    }
+  }
+}
+
+@include generate-columns($breakpoints);
