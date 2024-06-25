@@ -33,8 +33,8 @@ $breakpoints: (
   @media (min-width: $min) {
     .container {
       @if $breakpoint == "xs" or $breakpoint == "sm" {
-        margin-left: 0.4em;
-        margin-right: 0.4em;
+        margin-left: 3vmin;
+        margin-right: 3vmin;
         max-width: calc($width - 0.8em);
       } @else {
         max-width: $width;
