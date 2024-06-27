@@ -24,6 +24,10 @@
 @use "~@jogarcia/mgrid/g-row.scss";
 @use "~@jogarcia/mgrid/g-col.scss";
 
+body { 
+  margin: 0;
+}
+
 .d-flex {
   display: flex;
 }
