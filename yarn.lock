@@ -51,6 +51,8 @@ __metadata:
 "@jogarcia/mgrid-monorepo@workspace:.":
   version: 0.0.0-use.local
   resolution: "@jogarcia/mgrid-monorepo@workspace:."
+  dependencies:
+    "@parcel/transformer-sass": 2.12.0
   languageName: unknown
   linkType: soft
 
@@ -1003,6 +1005,17 @@ __metadata:
     "@parcel/utils": 2.12.0
     react-refresh: ^0.9.0
   checksum: 9aba8c1ab0e7a3dc4da735f093b38e6bcda04385b5ba3373d2b2d09f8099c5dd40493d4b77ca697f499d8d204b6288fd1a5dc1b6c717041d612dcdc501908937
+  languageName: node
+  linkType: hard
+
+"@parcel/transformer-sass@npm:2.12.0":
+  version: 2.12.0
+  resolution: "@parcel/transformer-sass@npm:2.12.0"
+  dependencies:
+    "@parcel/plugin": 2.12.0
+    "@parcel/source-map": ^2.1.1
+    sass: ^1.38.0
+  checksum: ce6b4d329b60dd4766a47b064cb10d18406ce569488b7f7c6fe561e9180786b813194935d9679bbe4b9afa43877a034d57a4b61e1166a2801af3889196a1e3d8
   languageName: node
   linkType: hard
 
