@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "description": "A simple container class based on Bootstrap's container class",
   "scripts": {
-    "dev": "yarn --cwd playground dev",
-    "watch": "yarn --cwd mgrid watch",
-    "build": "yarn --cwd mgrid build"
+    "dev": "yarn workspace @jogarcia/mgrid-playground run dev",
+    "watch": "yarn workspace @jogarcia/mgrid run  watch",
+    "build": "yarn workspace @jogarcia/mgrid run build",
+    "deploy": "yarn workspace @jogarcia/mgrid run deploy"
   },
   "workspaces": [
     "./mgrid",
