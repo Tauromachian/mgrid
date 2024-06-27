@@ -1,7 +1,6 @@
 {
   "name": "@jogarcia/mgrid",
   "version": "1.0.0",
-  "private": false,
   "description": "A simple container class based on Bootstrap's container class",
   "homepage": "https://github.com/Tauromachian/mgrid.git#readme",
   "repository": {
