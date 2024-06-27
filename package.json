@@ -8,8 +8,8 @@
     "build": "yarn --cwd mgrid build"
   },
   "workspaces": [
-    "mgrid",
-    "playground"
+    "./mgrid",
+    "./playground"
   ],
   "author": "Jose Garcia",
   "license": "MIT",
